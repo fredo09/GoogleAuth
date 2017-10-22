@@ -116,7 +116,7 @@ public class PrincipalActivity extends AppCompatActivity implements GoogleApiCli
         });
     }
 
-    //Para remover cuenta del usuario en apps
+    //Para remover cuenta del usuario en app
     public void revoke(View view) {
 
         Auth.GoogleSignInApi.revokeAccess(googleApiClient).setResultCallback(new ResultCallback<Status>() {
