@@ -83,17 +83,19 @@ public class PrincipalActivity extends AppCompatActivity implements GoogleApiCli
             //Obtenemos los datos del usuario logeado
             GoogleSignInAccount account = result.getSignInAccount();
 
+            //Agregando a las visas
             nameTextView.setText(account.getDisplayName());
             emailTextView.setText(account.getEmail());
             idTextView.setText(account.getId());
 
+            //Usando glide para mostrar la url de la imagen
             Glide.with(this).load(account.getPhotoUrl()).into(photoImageView);
         }else{
             goLogInScreen();
         }
     }
 
-
+    //Ir a login en de la app
     private void goLogInScreen() {
         Intent intent = new Intent(this,MainActivity.class);
         startActivity(intent);
@@ -129,6 +131,7 @@ public class PrincipalActivity extends AppCompatActivity implements GoogleApiCli
         });
     }
 
+    //Verificando las fallas de conexion
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
