@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GoogleAuth</string>
+    <string name="no_inicio">inicio session</string>
+    <string name="log_out">Salir</string>
+    <string name="revoke">Remover Cuenta</string>
+    <string name="not_close_session">No se Cerro sesion</string>
+    <string name="not_revoke">No se pudo remover Cuenta</string>
+</resources>
