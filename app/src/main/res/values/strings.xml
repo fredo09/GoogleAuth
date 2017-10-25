@@ -5,4 +5,5 @@
     <string name="revoke">Remover Cuenta</string>
     <string name="not_close_session">No se Cerro sesion</string>
     <string name="not_revoke">No se pudo remover Cuenta</string>
+    <string name="no_firebase_auth">No se pudo autentificar</string>
 </resources>
